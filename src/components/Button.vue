@@ -3,6 +3,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'Button',
     props:{
@@ -11,7 +12,7 @@ export default {
     },
     methods:{
         onClick(){
-            console.log("Hello World")
+            this.$emit('btn-click')
         }
     }
 }
